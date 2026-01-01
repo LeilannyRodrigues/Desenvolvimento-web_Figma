@@ -1,38 +1,46 @@
-* {
+html {
+    font-size: 16px; 
+    width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
+    display: block;
+}
+
+* {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 100%;
     background-color: #EAE8E4;
+    overflow-x: hidden; 
+    display: block;
 }
 
 .apresentacao__header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 480px;
+    min-width: 100%;
+    min-height: 30rem;
+    overflow-x: hidden;
+    height: auto;
     background-color: #2D2D2D;
-    border-radius: 0 0 32px 32px;
+    border-radius: 0 0 2rem 2rem;
+    overflow: hidden;
     opacity: 1;
-
-    /*
-    display: flex; 
-    align-items: stretch;
-    width: 100%;   
-    background-color: #1a1a1a;
-    border-radius: 0 0 30px 30px;
-    */
 }
 
 .header-wrapper {
     display: flex;
     width: 100%;
-    max-width: 1440px; /* Mesma largura do seu .apresentacao__container */
+    max-width: 85.375rem; 
     margin: 0 auto;
-    padding: 0 80px;   /* Mesmo padding lateral do seu site */
+    padding: 0 5rem;;   
     height: 100%;
 }
 
@@ -50,9 +58,9 @@ body {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 480px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 30rem;
+    padding-top: 1.5rem;   
+    padding-bottom: 1.5rem;
     color: #EAE8E4;
     /*
     border-radius: 0 0 0 30px;
@@ -62,87 +70,73 @@ body {
 .header-topo {
     display: flex;
     align-items: center;
-    /*
-    width: 780px;
-    gap: 24px;
-    */
     width: 100%;
-    height: 24px;
-    gap: 24px;
+    height: 1.5rem;
+    gap: 1.5rem;
 }
 
 .logo {
-    width: 140px;
-    height: 24px;
-    gap: 24px;
-    font-size: 24px;
+    width: 8.75rem;
+    height: 1.5rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .menu {
-    /*
-    margin-right: 50%;
-    */
-    display: flex;
-    gap: 24px;
-    font-size: 14px;
-    display: flex;
+    display: flex;    
+    gap: 1.5rem;    
+    font-size: 0.875rem;
 }
 
 .apresentacao__texto {
-    width: 700px;
-    height: 300px;
-    padding-top: 60px;
-    gap: 8px;
+    width: 43.75rem;
+    height: 18.75rem;
+    padding-top: 3.75rem;
+    gap: 0.5rem;
 }
 
 .apresentacao__texto h1 {
-    width: 700px;
-    height: 114px;
-    gap: 16px;
+    width: 43.75rem;
+    height: 7.125rem;
+    gap: 1rem;
 }
 
 .apresentacao__texto p {
-    width: 700px;
-    height: 81px;
+    width: 43.75rem;
+    height: 5.0625rem;
 }
 
 .scroll-logo {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 72px;
-    height: 100px;
-    gap: 10px;
+    width: 4.5rem;
+    height: 6.25rem;
+    gap: 0.625rem;
     opacity: 1;
-    padding-right: 1px;
-    padding-left: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 20px auto 0;
+    padding-right: 0.0625rem;
+    padding-left: 0.0625rem;
+    margin: 1.25rem auto 0;
 }
 
 .scroll {
-    width: 70px;
+    width: 4.375rem;
     height: auto;
     object-fit: contain;
     opacity: 1;
-    border-width: 1px;
-    left: 1px;
+    border-width: 0.0625rem;
+    left: 0.0625rem;
 }
 
 
 .image_monks {
     display: flex;
-    width: 506px;
+    width: 31.625rem;
     height: 100%;
-    /*
-    height: 480px;
-    */
-    padding: 10px;
-    gap: 10px;
+    padding: 0.625rem;
+    gap: 0.625rem;
     opacity: 1;
 }
 
@@ -158,234 +152,239 @@ body {
 
 
 .apresentacao__container {
-    max-width: 1440px;
-    /* Largura padrão do Desk no Figma */
+    max-width: 90rem;
     margin: 0 auto;
-    padding: 0 80px;
-    /* MUDANÇA: Alinhamento exato com o topo */
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
 }
 
 .apresentacao__conteudo {
-    width: 1366px;
-    height: 533px;
-    gap: 40px;
+    width: 100%;
+    max-width: 85.375rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 5rem 2rem 5rem;
+    gap: 2.5rem;
     opacity: 1;
-    padding-top: 64px;
-    padding-right: 80px;
-    padding-bottom: 32px;
-    padding-left: 80px;
-
 }
 
 .Card-image {
     display: flex;
-    width: 1206px;
-    height: 314px;
-    gap: 24px;
+    width: 75.375rem;
+    height: 19.625rem;
+    gap: 1.5rem;
     opacity: 1;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 283.5px;
-    height: 314px;
-    padding-top: 6px;
-    padding-right: 6px;
-    padding-bottom: 16px;
-    padding-left: 6px;
-    gap: 8px;
+    width: 17.71rem;
+    height: 19.625rem;
+    padding: 0.375rem 0.375rem 1rem 0.375rem;
+    gap: 0.5rem;
     opacity: 1;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #FCFCFD;
 }
 
 .card-img-top {
-    width: 271.5px;
-    height: 180px;
+    width: 16.96875rem;
+    height: 11.25rem;
     opacity: 1;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
-    width: 271.5px;
-    height: 104px;
-    padding-right: 8px;
-    padding-left: 8px;
-    gap: 8px;
+    width: 16.96875rem;
+    height: 6.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    gap: 0.5rem;
     opacity: 1;
 }
 
 .card-title {
     flex-direction: row;
-    width: 255.5px;
-    height: 36px;
-    gap: 10px;
+    width: 15.96875rem;
+    height: 2.25rem;
+    gap: 0.625rem;
     opacity: 1;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*
     font-weight: 400px;
     font-style: Medium;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0%;
+    */
+    font-weight: 500;      
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
 }
 
 .card-text {
-    width: 255.5px;
-    height: 60px;
-    gap: 10px;
+    width: 15.96875rem;
+    height: 3.75rem;
+    gap: 0.625rem;
     opacity: 1;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400px;
-    font-style: Light;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: 0rem;
 }
 
 .sessao__image {
     display: flex;
-    width: 1366px;
-    height: 845px;
-    gap: 24px;
+    width: 100%;
+    max-width: 85.375rem;
+    height: auto;
+    margin: 0 auto;
+    gap: 1.5rem;
     opacity: 1;
-    padding-top: 64px;
-    padding-right: 80px;
-    padding-bottom: 64px;
-    padding-left: 80px;
+    padding: 4rem 5rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .sessao__texto {
-    width: 591px;
-    height: 717px;
-    gap: 34px;
+    width: 36.937rem;
+    height: 44.812rem;
+    gap: 2.125rem;
     opacity: 1;
 }
 
 
 .colunas_menores {
-    width: 591px;
-    height: 717px;
-    gap: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: auto;
+    min-width: 250px;
+    gap: 1.5rem;
     opacity: 1;
-    width: 591;
 }
 
 .colunas_menores img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .banner-container {
-    width: 1366px;
-    height: 312px;
-    padding-top: 32px;
-    padding-right: 80px;
-    padding-bottom: 64px;
-    padding-left: 80px;
-    gap: 24px;
+    width: 100%;
+    max-width: 85.375rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 5rem 4rem 5rem;
+    gap: 1.5rem;
     opacity: 1;
-    border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .banner-apps {
     display: flex;
-    width: 1206px;
-    height: 216px;
-    gap: 40px;
+    width: 75.375rem;
+    height: 13.5rem;
+    gap: 2.5rem;
     opacity: 1;
-    padding: 40px;
-    border-radius: 24px;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
     background-color: #3C0C60;
 }
 
 .banner-apps__texto {
-    width: 868.87;
-    height: 111px;
-    gap: 8px;
+    width: 54.304rem;
+    height: 6.937rem;
+    gap: 0.5rem;
     opacity: 1;
 }
 
 .banner-apps__texto h1 {
-    width: 868.87px;
-    height: 47px;
+    width: 54.304rem;
+    height: 2.937rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    /*
     font-style: Medium;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 2%;
+    */
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
     opacity: 1;
     color: #EAE8E4;
 }
 
 .banner-apps__texto p {
-    width: 868.87;
-    height: 56px;
+    width: 54.304rem;
+    height: 3.5rem;
     opacity: 1;
     color: #EAE8E4;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    /*
     font-style: Light;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 2%;
+    */
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
 }
 
 .botoes-app {
     display: flex;
     flex-direction: column;
-    width: 217.13px;
-    height: 136px;
-    gap: 8px;
+    width: 13.57rem;
+    height: 8.5rem;
+    gap: 0.5rem;
     opacity: 1;
 }
 
 .app-apple {
-    width: 217.13px;
-    height: 64px;
+    width: 13.57rem;
+    height: 4rem;
     opacity: 1;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .app-android {
-    width: 216.13;
-    height: 64px;
+    width: 13.508rem;
+    height: 4rem;
     opacity: 1;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
 }
 
 .secao-categorias {
     display: flex;
     flex-direction: column;
-    width: 1366px;
-    height: 337px;
-    gap: 40px;
+    width: 100%;
+    max-width: 85.375rem;
+    height: auto;
+    margin: 0 auto;
+    gap: 2.5rem;
     opacity: 1;
-    padding-top: 32px;
-    padding-right: 80px;
-    padding-bottom: 32px;
-    padding-left: 80px;
+    padding: 2rem 5rem;
 }
 
 .titulo-categorias {
-    width: 1206px;
-    height: 47px;
+    width: 75.375rem;
+    height: 2.937rem;
     opacity: 1;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     ;
-    font-weight: 400;
+    font-weight: 500;
+    /*
     font-style: Medium;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 2%;
+    */
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
     color: #2D2D2D;
 }
 
@@ -393,9 +392,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1206px;
-    height: 186px;
-    gap: 24px;
+    width: 75.375rem;
+    height: 11.625rem;
+    gap: 1.5rem;
     opacity: 1;
 }
 
@@ -403,9 +402,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1206px;
-    height: 186px;
-    gap: 24px;
+    width: 75.375rem;
+    height: 11.625rem;
+    gap: 1.5rem;
     opacity: 1;
 }
 
@@ -414,26 +413,18 @@ body {
     width: 187;
     height: 46;
     */
-    gap: 10px;
+    gap: 0.625rem;
     opacity: 1;
-    padding: 8px 40px;
+    padding: 0.5rem 2.5rem;
+    /*
     border-width: 1px solid #7D26C9;
+    */
+    border: 0.062rem solid #7D26C9;
     background-color: transparent;
-    border-radius: 32px;
-    height: 46px;
+    border-radius: 2rem;
+    height: 2.875rem;
     white-space: nowrap;
 
-    /*
-    padding: 14px 40px;
-    border: 2px solid #A293B3;
-    background-color: transparent;
-    border-radius: 50px;
-    color: #4A4A4A;
-    font-size: 15px;
-    cursor: pointer;
-    white-space: nowrap; 
-    transition: all 0.3s ease; 
-    */
 }
 
 .btn-categoria:hover {
@@ -444,13 +435,12 @@ body {
 
 .container__cards {
     display: flex;
-    width: 1366px;
-    height: 372px;
-    padding-top: 32px;
-    padding-right: 80px;
-    padding-bottom: 64px;
-    padding-left: 80px;
-    gap: 40px;
+    width: 100%;
+    max-width: 85.375rem;
+    height: auto;           
+    margin: 0 auto;
+    padding: 2rem 5rem 4rem 5rem;
+    gap: 2.5rem;
     opacity: 1;
     /*
     justify-content: space-around;
@@ -463,45 +453,51 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 375.33px;
-    height: 276px;
-    border-radius: 16px;
-    gap: 24px;
+    width: 23.458rem;
+    height: 17.25rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
     opacity: 1;
-    padding: 24px;
-    border: 2px solid #DFBBFE;
+    padding: 1.5rem;
+    border: 0.125rem solid #DFBBFE;
     background-color: #FFFFFF;
 }
 
 .card-body {
-    width: 327.33px;
-    height: 164px;
-    gap: 8px;
+    width: 20.458rem;
+    height: 10.25rem;
+    gap: 0.5rem;
     opacity: 1;
 }
 
 .card-title {
-    width: 327.33px;
-    height: 36px;
+    width: 20.458rem;
+    height: 2.25rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    /*    
     font-style: Medium;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0%;
+    */
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
     color: #2D2D2D;
 }
 
 .card-text {
-    width: 327.33px;
-    height: 120px;
-    gap: 10px;
+    width: 20.458rem;
+    height: 7.5rem;
+    gap: 0.625rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    /*
     font-style: Light;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
+    */
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: 0rem;
     color: #2D2D2D;
 }
 
@@ -518,21 +514,21 @@ body {
 }
 
 .btn-btn-primary {
-    width: 180px;
-    height: 40px;
-    padding: 8px 40px;
+    width: 11.25rem;
+    height: 2.5rem;
+    padding: 0.5rem 2.5rem;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: #2D2D2D;
     background-color: #DFBBFE;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     white-space: nowrap;
     opacity: 1;
     /*
@@ -543,81 +539,37 @@ body {
     */
 }
 
-/* Estilização da Seção Escura de Fundo */
 .secao-formulario {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 584px;
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: 36.5rem;
     background-color: #2D2D2D;
     margin: 0;
 
-
-    /*
-    gap: 40px;
-    position: relative;
-    overflow: hidden;
-
-    /*
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    
-    padding-top: 100px;      
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: center;
-    /*
-    padding: 60px 0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    */
 }
 
 .container-formulario-escuro {
     display: flex;
     justify-content: space-between;
-    /* EMPURRA O BLOCO PARA A DIREITA */
     align-items: center;
     width: 100%;
-    max-width: 1366px;
+    max-width: 85.375rem;
     /*height: 584px*/
-    gap: 40px;
-    padding: 0 80px;
+    height: auto;           /* Permite que a altura se ajuste no mobile */
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding: 0 5rem;
     box-sizing: border-box;
-    /*
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 64px 80px;
-    gap: 40px;
-    align-items: center;
-    /*
-    justify-content: space-between;
-    */
-
-    /*
-    padding: 64px 80px;
-    /*
-    opacity: 1;             
-    /*
-    display: flex;
-    /*flex-direction: row; 
-    align-items: center;
-    justify-content: center;
-    gap: 40px; 
-    width: 90%;
-    max-width: 1100px;
-    */
 }
 
 .formulario-image img {
-    width: 314.55;
-    height: 300.87;
+    width: 19.659rem;
+    height: 18.804rem;
     object-fit: contain;
     /*
     opacity: 1;
@@ -630,133 +582,109 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 851.45px;
-    height: 456px;
-    gap: 32px;
-    border-radius: 24px;
-    padding: 24px;
+    width: 53.215rem;
+    height: 28.5rem;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
     background-color: #EAE8E4;
 
-    /*
-    opacity: 1;
-
-
-    /*
-    background-color: #FFFFFF;
-    padding: 40px;
-    border-radius: 20px;
-    flex: 1;                  
-    max-width: 650px;         
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    margin-top: -50px;        /* OPCIONAL: Efeito de 'subir' sobre a seção anterior se desejar */
-    /*
-    background-color: #FFFFFF;
-    padding: 30px 40px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 600px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    */
 }
 
 .form-text {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* Ocupa o espaço interno do bloco branco sem vazar */
     max-width: 100%;
     /* Medida de texto do Figma */
     /*height: 128px;*/
     /*gap: 8px;*/
 }
 
-/*
-.formulario-bloco-branco header {
-    margin-bottom: 30px;
-}
-*/
+
 
 .formulario-bloco-branco h2 {
+    display: flex;
     flex-direction: row;
-    width: 803.45px;
-    height: 47px;
+    width: 50.215rem;
+    height: 2.937rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    /*
     font-style: Medium;
-    font-size: 40px;
+    */
+    font-style: normal;
+    font-size: 2.5rem;
     line-height: 100%;
-    letter-spacing: 2%;
+    letter-spacing: 0.05rem;
     color: #2D2D2D;
     margin: 0;
 }
 
 .formulario-bloco-branco p {
+    display: flex;
     flex-direction: row;
-    width: 803.45px;
-    height: 30px;
+    width: 50.215rem;
+    height: 1.875rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    /*
     font-style: Light;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
+    */
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: 0rem;
     color: #2D2D2D;
 }
 
 .container__text {
     display: flex;
     flex-direction: row;
-    width: 803.45px;
-    height: 35px;
-    padding-top: 16px;
-    gap: 10px;
+    width: 50.215rem;
+    height: 2.187rem;
+    padding-top: 1rem;
+    gap: 0.625rem;
     /*
     opacity: 1;
     */
 }
 
 .texto {
-    width: 803.45px;
-    height: 19px;
+    width: 50.215rem;
+    height: 1.187rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    /*
     font-style: Light;
-    font-size: 16px;
+    */
+    font-style: normal;
+    font-size: 1rem;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0rem;
     color: #2D2D2D;
 }
 
 .meuFormulario {
     display: flex;
-    gap: 18px;
-    width: 100%;
-    /* Ocupa o espaço interno do bloco branco sem vazar */
+    gap: 1.125rem;
+    width: 100%;   
     max-width: 100%;
-    /* Medida de texto do Figma */
-    /*;
-    /*
-    height: 102px;
-    gap: 18px;
-    /*
-    opacity: 1;
-    */
+    
 }
 
 .grupo-inputs {
     display: grid;
-    grid-template-columns: 392.72px 392.72px;
-    gap: 18px;
-    margin-bottom: 18px;
-    /*width: 100%;*/
-    /*height: 102px;*/
+    grid-template-columns: 24.545rem 24.545rem;
+    gap: 1.125rem;
+    margin-bottom: 1.125rem;
 }
 
 .grupo-inputs input {
     width: 100%;
-    height: 42px;
-    padding: 6px 10px;
-    border-radius: 8px;
+    height: 2.625rem;
+    padding: 0.375rem 0.625rem;
+    border-radius: 0.5rem;
     background-color: #FFFFFF;
     box-sizing: border-box;
     border: transparent;
@@ -764,80 +692,71 @@ body {
 
 
 .seguranca-container {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     display: flex;
-    width: 803.45px;
-    height: 42px;
-    gap: 32px;
+    width: 50.215rem;
+    height: 2.625rem;
+    gap: 2rem;
 }
 
 .seguranca-container label {
-    width: 281px;
-    height: 36px;
+    width: 17.562rem;
+    height: 2.25rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    /*
     font-style: Medium;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0%;
+    */
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
 }
 
 .seguranca-operacao {
     display: flex;
     align-items: center;
-    width: 224px;
-    height: 42px;
-    gap: 32px;
+    width: 14rem;
+    height: 2.625rem;
+    gap: 2rem;
 }
 
 
 #num1,#num2 {
     color: #a855f7;
-    width: 178px;
-    height: 42px;
-    gap: 16px;
+    width: 11.125rem;
+    height: 2.625rem;
+    gap: 1rem;
     opacity: 1;
-    padding-right: 24px;
-    padding-left: 24px;
-    border-radius: 8px;
+    padding-right: 1.5rem;  
+    padding-left: 1.5rem;   
+    border-radius: 0.5rem;
     background-color: #DFDCD5;
 
 }
 
 #respostaUsuario {
-    width: 234.45px;
-    height: 42px;
+    width: 14.653rem;
+    height: 2.625rem;
     opacity: 1;
-    padding-top: 6px 10px;
-    border-radius: 8px;
+    padding: 0.375rem 0.625rem;
+    border-radius: 0.5rem;
     background-color: #FFFFFF;
 }
 
-/*
-#mensagemValidacao {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    min-height: 24px;
-}
-    */
 
 .btn-enviar-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .btn-enviar {
-    width: 180px;
-    height: 40px;
+    width: 11.25rem;
+    height: 2.5rem;
     opacity: 0.5;
-    padding-top: 8px;
-    padding-right: 40px;
-    padding-bottom: 8px;
-    padding-left: 40px;
-    border-radius: 4px;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.25rem;
     background-color: #DFBBFE;
     display: flex;
     align-items: center;
@@ -851,9 +770,17 @@ body {
 .rodape-final {
     background-color: #2D2D2D;
     width: 100%;
-    height: 220px;
-    padding: 40px 120px;
-    gap: 40px;
+    min-width: 100%;
+    /*
+    max-width: 100vw;
+    */
+    overflow-x: hidden;
+    height: auto;
+    /*
+    padding: 2.5rem 7.5rem;
+    */
+    padding: 2.5rem 1rem;
+    gap: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -862,27 +789,29 @@ body {
 .social-logos {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    width: 231px;
-    height: 32px;
+    gap: 2.5rem;
+    width: 14.437rem;
+    height: 2rem;
 }
 
 .footer-content {
-    width: 572px;
-    height: 68px;
-    gap: 8px;
+    width: 35.75rem;
+    height: 4.25rem;
+    gap: 0.5rem;
     opacity: 1;
 }
 
 .footer-title {
-    width: 572px;
-    height: 36px;
+    width: 35.75rem;
+    height: 2.25rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    /*
     font-style: Medium;
-    font-size: 20px;
-    line-height: 36px;
-    letter-spacing: 0%;
+    */
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0rem;
     text-align: center;
     color: #EAE8E4;
 }
@@ -890,21 +819,24 @@ body {
 .footer-links {
     display: flex;
     flex-wrap: nowrap;
-    width: 572px;
-    height: 24px;
-    gap: 40px;
+    width: 35.75rem;
+    height: 1.5rem;
+    gap: 2.5rem;
     opacity: 1;
 }
 
 .footer-menu {
-    width: 113px;
-    height: 24px;
+    width: 7.0625rem;
+    height: 1.5rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    font-style: normal;
+    /*
     font-style: Light;
-    font-size: 20px;
+    */
+    font-size: 1.25rem;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0rem;
     color: #EAE8E4;
     white-space: nowrap;
 }
