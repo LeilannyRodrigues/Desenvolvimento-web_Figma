@@ -803,7 +803,7 @@ body {
 
 @media (max-width: 768px) {
 
-
+    /*
     .menu-hamburger {
         display: flex;
         flex-direction: column;
@@ -813,31 +813,43 @@ body {
         cursor: pointer;
         z-index: 1001;
     }
-    
+        */
 
-    .menu-hamburger span,
-    .menu-hamburger span::before,
-    .menu-hamburger span::after {
-        content: "";
-        display: block;
-        background: #EAE8E4;
-        height: 2px;
+    /* Estilo do Botão */
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px; /* Altura total do conjunto no Figma */
+        cursor: pointer;
+        z-index: 1001;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    /* Estilo das 3 Linhas Reais */
+    .line {
         width: 100%;
-        border-radius: 2px;
+        height: 2px;
+        background-color: #EAE8E4;
+        border-radius: 10px; /* Pontas arredondadas idênticas ao Figma */
         transition: 0.3s;
-        position: relative;
     }
 
-    .menu-hamburger span::before {
-        top: -6px;
-        position: absolute;
+    /* Animação para virar 'X' ao clicar */
+    .menu-hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    .menu-hamburger span::after {
-        bottom: -6px;
-        position: absolute;
+    .menu-hamburger.active .line:nth-child(2) {
+        opacity: 0; /* A linha do meio some */
     }
 
+    .menu-hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
     .menu {
         display: flex !important;
@@ -865,21 +877,6 @@ body {
     .menu.active {
         right: 0;
     }
-
-    .menu-hamburger.active span {
-        background: transparent;
-    }
-
-    .menu-hamburger.active span::before {
-        transform: rotate(45deg);
-        top: 0;
-    }
-
-    .menu-hamburger.active span::after {
-        transform: rotate(-45deg);
-        bottom: 0;
-    }
-
 
     .header-topo {
         flex-direction: row;
